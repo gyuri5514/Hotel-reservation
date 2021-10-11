@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.adminPageController">
+   <children>
+      <Label layoutX="23.0" layoutY="14.0" style="-fx-background-color: #30448e; -fx-background-radius: 15;" text=" admin 님 환영합니다. " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <TableView fx:id="tableView1" layoutX="24.0" layoutY="298.0" onMouseClicked="#selecttableView" prefHeight="284.0" prefWidth="949.0">
+        <columns>
+          <TableColumn fx:id="tRname" prefWidth="75.0" text="객실이름" />
+          <TableColumn fx:id="tName" prefWidth="95.0" text="예약자성함" />
+            <TableColumn fx:id="tChkIn" prefWidth="183.0" text="체크인" />
+            <TableColumn fx:id="tChkOut" prefWidth="170.0" text="체크아웃" />
+            <TableColumn fx:id="tPeople" prefWidth="92.0" text="인원" />
+            <TableColumn fx:id="tPhone" prefWidth="227.0" text="번호" />
+            <TableColumn fx:id="tPay" prefWidth="106.0" text="결제금액" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="DP" layoutX="24.0" layoutY="254.0" />
+      <Label layoutX="23.0" layoutY="227.0" text=" 예약현황 ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="upBtn" layoutX="344.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #30448e; -fx-background-radius: 50;" text="수정" textAlignment="CENTER" textFill="WHITE" />
+      <Button fx:id="allBtn" layoutX="244.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #30448e; -fx-background-radius: 50;" text="전체보기" textFill="WHITE" />
+      <Button fx:id="excelBtn" layoutX="893.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #30448e; -fx-background-radius: 50;" text="액셀저장" textFill="WHITE" />
+      <Button fx:id="delBtn" layoutX="403.0" layoutY="254.0" mnemonicParsing="false" style="-fx-background-color: #30448e; -fx-background-radius: 50;" text="삭제" textFill="WHITE" />
+      <TextField fx:id="tfRname" layoutX="112.0" layoutY="102.0" promptText="객실이름" />
+      <TextField fx:id="tfName" editable="false" layoutX="317.0" layoutY="102.0" promptText="이름" />
+      <TextField fx:id="tfChkIn" editable="false" layoutX="112.0" layoutY="143.0" promptText="체크인" />
+      <TextField fx:id="tfChkOut" editable="false" layoutX="317.0" layoutY="143.0" promptText="체크아웃" />
+      <TextField fx:id="tfPhone" layoutX="519.0" layoutY="102.0" promptText="번호" />
+      <TextField fx:id="tfPeople" layoutX="519.0" layoutY="143.0" promptText="인원" />
+      <TextField fx:id="tfPay" editable="false" layoutX="721.0" layoutY="143.0" promptText="결제금액" />
+   </children>
+</AnchorPane>
